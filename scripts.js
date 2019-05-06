@@ -9,19 +9,14 @@ function getQuote() {
       quoteContainer.innerHTML = data.quote
       const button = document.createElement("button")
       button.textContent = "another"
+      quoteContainer.appendChild(button)
       app.appendChild(quoteContainer)
-      app.appendChild(button)
-button.addEventListener('click', getQuote)
+      // app.appendChild(button)
 
+      button.addEventListener('click', getQuote)
    })
    .catch(error => console.error(error))
 }
 
-
 getQuote()
 
-
-
-// const newQuote = document.getElementById('newQuote')
-// newQuote.addEventListener('click', getQuote); // new quote on button click
-// window.onload = getQuote; // new quote on page load
