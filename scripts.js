@@ -12,11 +12,8 @@ fetch('https://api.kanye.rest')
     app.appendChild(button)
 
     button.addEventListener('click', function(event) {
-
       console.log(event)
-
     })
-
 
  })
  .catch(error => console.error(error))
