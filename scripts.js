@@ -1,8 +1,5 @@
 document.querySelector("button").addEventListener('click', getQuote)
 
-
-
-
 function getQuote() {
   fetch('https://api.kanye.rest')
    .then(response => response.json())
@@ -12,8 +9,6 @@ function getQuote() {
       quote.innerHTML = data.quote
    })
    .catch(error => console.error(error))
-
 }
 
 getQuote()
-
