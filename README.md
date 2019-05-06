@@ -1,1 +1,1 @@
-# fortunecookie
+# dailykanyewest quotes
